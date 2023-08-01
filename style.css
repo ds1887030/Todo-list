@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background: linear-gradient(130deg, #579ccd, #a180a2);
+    padding: 5px;
+
+}
+
+.todo-app {
+    width: 420px;
+    background-color: white;
+    margin: 100px auto 5rem;
+    padding: 40px 40px 50px;
+    border-radius: 10px;
+
+}
+
+.todo-app h2 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.todo-app h2 img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFEBEC;
+    border-radius: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #ff9797;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 20px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: rgb(221, 69, 69);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ff3c3c;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background-color: #cd9595;
+}
+#tasks{
+    height:25px;
+    background-color: #eaeaea;
+    margin: 5px;
+    padding: 3px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#pendin-tasks{
+    font-family: 'Fira Sans', sans-serif;
+}
