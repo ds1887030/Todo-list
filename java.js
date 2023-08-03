@@ -1,7 +1,7 @@
 const inputbox = document.getElementById("input-box");
 const listcontainer = document.getElementById("list-container");
-const taskcontainer = document.querySelector("#tasks");
-const countvalue = document.querySelector(".count-value");
+// const taskcontainer = document.querySelector("#tasks");
+// const countvalue = document.querySelector(".count-value");
 
 function addTask() {
     if (inputbox.value === '') {
